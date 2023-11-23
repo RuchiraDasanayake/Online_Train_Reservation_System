@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+body{
+	margin:0;
+	text-align: center;
+}
+.tablesection table tr:hover {
+	background-color: coral;
+	}
+.tablesection{
+	background-color: rgb(128, 128, 128);
+	width: 65%;
+	margin:30px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.tablesection table{
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size: 20px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+.tablesection table td, th {
+  border-bottom: 1px solid #ddd;
+}
+.tablesection th{
+	background-color: #04AA6D;
+	padding: 5px;
+	
+}
+.tablesection table,tr {
+	background-color: rgb(255, 255, 255);
+	}

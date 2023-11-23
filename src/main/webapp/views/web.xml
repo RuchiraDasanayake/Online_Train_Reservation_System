@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+    <servlet>
+        <servlet-name>ReadUserServlet</servlet-name>
+        <servlet-class>register_form.com.registration.controller.ReadUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadUserServlet</servlet-name>
+        <url-pattern>/read</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>UpdateUsernameServlet</servlet-name>
+    <servlet-class>register_form.com.registration.controller.UpdateUsernameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUsernameServlet</servlet-name>
+        <url-pattern>/updateUsername</url-pattern>
+    </servlet-mapping>
+    
+
+    <welcome-file-list>
+        <welcome-file>userdetails.jsp</welcome-file>
+        <welcome-file>ReadUserData.jsp</welcome-file>
+        <welcome-file>redirect.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

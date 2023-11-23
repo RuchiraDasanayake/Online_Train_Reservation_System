@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+</head>
+<body>
+   
+    <form action="<%= request.getContextPath() %>/AddUserServlet" method="post">
+        <h1>Registration Form  index.jsp</h1>
+        <lord-icon
+        src="https://cdn.lordicon.com/surcxhka.json"
+        trigger="loop"
+        delay="2000"
+        stroke="bold"
+        state="hover-jump-roll"
+        style="width:250px;height:250px">
+        </lord-icon>
+        <!-- First Name -->
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" autocomplete="off" placeholder="first name here" required><br>
+
+        <!-- Last Name -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name"  autocomplete="off" placeholder="last name here" required><br>
+        
+        <!-- NIC Number -->
+        <label for="nic_number">NIC Number:</label>
+        <input type="text" id="nic_number" name="nic_number"  autocomplete="off" pattern="^\d{12}$|^\d{9}[Vv]$" title="enter only new NIC number format or Old NIC format " placeholder="Enter 12 digits or 9 digits + 'V'" required><br>
+        
+        <!-- contact Number -->
+         <label for="contactNo">Contact No:</label>
+         <input type="text" id="contactNo" name="contactNo" autocomplete="off"   pattern="\d{10}" title="Please enter 10 digit Number" placeholder="0711234567" required><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" autocomplete="off" placeholder="address here" required></textarea><br>
+
+        <!-- Starting Station -->
+        <label for="starting_station">Starting Station:</label>
+        <input type="text" id="starting_station" name="starting_station" autocomplete="off" placeholder="starting train station" required><br>
+
+        <!-- Destination -->
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" autocomplete="off" placeholder="destination train station" required><br>
+
+        
+
+        <!-- Reason -->
+        <br>
+        <h4>NOTE: This tain pass request will be submitted to out database and will be processed within 7 working days. you will be notified <br> 
+        throug your contact no.</h4>
+
+        <!-- Image/PDF Upload -->
+        <!--  <label for="documents">Upload all requested documents:</label>
+        <input type="file" id="documents" name="documents" accept=".jpg, .jpeg, .png, .pdf" required><br>-->
+
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+    <query id="create_passenger_table">
+        <![CDATA[
+        create table passenger(
+            pId varchar(20) NOT NULL,
+            Name varchar(50),
+            NIC varchar(20),
+            conNum int,
+            address varchar(50),
+            email varchar(100),
+            primary key(pId)
+        );
+        ]]>
+    </query>
+    <query id="insert_passenger">
+        <![CDATA[
+            INSERT INTO passenger(pId,Name,NIC,conNum,address,email)
+            VALUES(?,?,?,?,?,?);
+        ]]>
+    </query>
+    <query id="get_passenger_ids">
+        <![CDATA[ 
+            SELECT pId FROM passenger;
+        ]]>
+    </query>
+    <query id="get_all_passengers">
+        <![CDATA[ 
+            SELECT * FROM passenger;
+        ]]>
+    </query>
+    <query id="get_passenger_by_id">
+        <![CDATA[ 
+            SELECT * FROM passenger WHERE pId=?;
+        ]]>
+    </query>
+    <query id="update_passenger">
+        <![CDATA[ 
+            UPDATE passenger
+            SET Name=?,NIC=?,conNum=?,address=?,email=?
+            WHERE pId=?;
+        ]]>
+    </query>
+    <query id="delete_passenger">
+        <![CDATA[ 
+            DELETE FROM passenger
+            WHERE pId=?;
+        ]]>
+    </query>
+    <query id="create_userreq_table">
+	
+	<![CDATA[
+	
+	CREATE TABLE monthpassrequests(
+		userId varchar(10),
+		firstName varchar(20) NULL,
+		lastName varchar(20) NULL,
+		NIC varchar(18) NOT NULL UNIQUE,
+		ContactNo varchar(20) NULL,
+		address varchar(50) NULL,
+		stPoint varchar(20) NULL,
+		destPoint varchar(20) NULL,
+		primary key(userId)		
+		);	
+		
+	]]>
+	
+	</query>
+	
+	<query id="insert_user">
+	
+	<![CDATA[
+	
+	insert into monthpassrequests(userId,firstName,lastName,NIC,ContactNo,address,stPoint,destPoint)
+	values(?,?,?,?,?,?,?,?);
+		
+	]]>
+	
+	</query>
+	
+	<query id="get_requested_details">
+	
+	<![CDATA[
+	
+	select * from monthpassrequests
+	where userId like ? 
+		
+	]]>
+	
+	</query>
+	
+	
+	<query id="update_user_details">
+	
+	<![CDATA[
+	
+	update monthpassrequests set
+	firstName =?,
+	lastName =?,
+	NIC =?,
+	ContactNo=?,
+	address =?,
+	stPoint =?,
+	destPoint =?
+	where userId like ?
+		
+	]]>
+	
+	</query>
+	
+	<query id="delete_user_details">
+	
+	<![CDATA[
+	
+	delete from monthpassrequests
+	where userId like ?
+		
+	]]>
+	
+	</query>
+	
+
+	
+	<query id="check_user_id">
+	
+	<![CDATA[
+	
+	select userId from monthpassrequests
+	where  userId like ?
+		
+	]]>
+	
+	</query>
+	
+	<query id="create_train_table">
+		
+		<![CDATA[
+		
+			CREATE TABLE Train(
+				trainId varchar(10) NOT NULL,
+				trainName varchar(50),
+				fromWhere varchar(50),
+				toWhere varchar(50),
+				dispatcher varchar(10),
+				arrival varchar(10),
+				trainDate DATE,
+				PRIMARY KEY (trainId)
+			);
+			
+		]]>
+		
+	</query>
+	
+	<query id="insert_train">
+		
+		<![CDATA[
+		
+			INSERT INTO Train(trainId, trainName, fromWhere, toWhere, dispatcher, arrival, trainDate)
+			VALUES(?,?,?,?,?,?,?);
+			
+		]]>
+		
+	</query>
+	
+	<query id="get_ids">
+		
+		<![CDATA[
+		
+			SELECT trainId FROM Train;
+			
+		]]>
+		
+	</query>
+	
+	<query id="get_all_train">
+		
+		<![CDATA[
+		
+			SELECT * FROM Train
+			WHERE fromWhere = ? AND toWhere = ? AND trainDate = ?;
+			
+		]]>
+		
+	</query>
+	
+	<query id="get_train_by_id">
+		
+		<![CDATA[
+		
+			SELECT * FROM Train WHERE trainId = ?;
+			
+		]]>
+		
+	</query>
+	
+	<query id="update_train">
+		
+		<![CDATA[
+		
+			UPDATE Train
+			SET trainName = ?, fromWhere = ?, toWhere = ?, dispatcher = ?, arrival = ?, trainDate = ?
+			WHERE trainId = ?;
+			
+		]]>
+		
+	</query>
+	
+	<query id="delete_train">
+		
+		<![CDATA[
+		
+			DELETE FROM Train
+			WHERE trainId = ?;
+			
+		]]>
+		
+	</query>
+	
+	<query id="get_username_by_id">
+		
+		<![CDATA[
+		
+			SELECT username, password, role, user_id FROM users;
+			
+		]]>
+		
+	</query>
+	
+		<query id="get_all_requests">
+	
+	<![CDATA[
+	
+	select * from monthpassrequests
+		
+	]]>
+	
+	</query>
+	
+</queries>

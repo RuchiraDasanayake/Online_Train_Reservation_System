@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+/* Apply styles to the form container */
+body{
+  background-image:url("www.jpg") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:0px
+}
+#reqform{
+    max-width: 45%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffffa2;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  section{
+	padding: 10px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  }
+  section input[type="submit"]{
+	  /*display: inline-block; /* Make the buttons inline-block elements */
+  	padding: 20px 60px;
+  	margin:10px;
+  	font-size:large;
+  }
+  
+  /* Style form header */
+  h1 {
+    color: #0c0101;
+  }
+  
+  /* Style form labels */
+ 
+  
+  /* Style form input fields and textareas */
+  input[type="text"],
+  textarea
+  {
+    width: 80%;
+    padding: 10px 10px;
+    margin: 10px 10px 20px 8px;
+    border: 0.5px solid rgba(99, 95, 95, 0.616);
+    border-radius: 15px;
+    font-size: 18px ;
+  }
+  select{
+    width: 93%;
+    padding: 10px 10px;
+    margin: 10px 0px 2% 0px;
+    border: 0.5px solid rgba(99, 95, 95, 0.616);
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  
+  /* Style the file input for image/PDF upload */
+  input[type="file"] {
+    width: 80%;
+    padding: 20px 10px;
+    margin: 10px 0px 2% 0px;
+    border: 0.5px solid rgba(99, 95, 95, 0.616);
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 60px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  /* Change submit button color on hover */
+  input[type="submit"]:hover {
+    background-color: rgb(0, 94, 198);
+    box-shadow: 30px;
+  }
+  
+  /* Add spacing between form elements */
+  br {
+    display: block;
+    margin: 10px 0;
+  }
+
+  label{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: normal;
+    margin: 10px 10px 20px 80px;
+  }
+  
+   button{
+   background-color: #007bff;
+	   color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    margin: 30px;
+     margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: left; 
+    
+    display: flex;
+    align-items: center;
+    
+    
+   }
+  

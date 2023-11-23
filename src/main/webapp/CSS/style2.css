@@ -1,0 +1,99 @@
+body {
+    background-image: url(scene.jpg);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-wrap: wrap;
+    align-content: flex-start;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formc {
+	margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 90%;
+}
+
+.formc h1 {
+	margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: crimson;
+}
+
+.formc h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.formc label {
+    margin-bottom: 5px;
+}
+
+.formc input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formc input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formc input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.button {
+    background-color: rgb(255, 0, 0);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(156, 1, 24);
+}
+
+::placeholder {
+            color: #888; 
+            font-style: italic; 
+            font-size: 14px;
+            letter-spacing: 2px; 
+}
+
+
